@@ -290,7 +290,7 @@ select {
 }
 
 .button-circle > label.active {
-  background-color: hsl(var(--clr-light-grey));
+  background-color: hsl(var(--clr-orange));
 }
 
 .button-circle input {
@@ -303,7 +303,7 @@ select {
 }
 
 .button-circle label:hover {
-  background-color: hsl(var(--clr-orange));
+  background-color: hsl(var(--clr-light-grey));
   cursor: pointer;
 }
 
