@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <script src="navigation.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div id="rating" class="container">
+        <div>
+          <div class="circle"><img src="./images/icon-star.svg" /></div>
+        </div>
+        <h1 class="fw-700 fs-700">How did we do?</h1>
+        <p class="text-light-grey fs-400 line-height">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="button-circle" data-toggle="buttons">
+          <label><input type="radio" name="options" value="1" />1</label>
+          <label><input type="radio" name="options" value="2" />2</label>
+          <label><input type="radio" name="options" value="3" />3</label>
+          <label><input type="radio" name="options" value="4" />4</label>
+          <label><input type="radio" name="options" value="5" />5</label>
+        </div>
+        <p hidden class="error">Select a score first</p>
+        <button
+          class="submit-button text-white fs-400 fw-700 letter-spacing-2 uppercase"
+        >
+          Submit
+        </button>
+      </div>
+      <div id="thanks" class="container" style="display: none">
+        <img src="./images/illustration-thank-you.svg" />
+        <div class="text-div">
+          <p class="text-orange">
+            You selected <span>-</span> out of <span id="button-count">-</span>
+          </p>
+        </div>
+        <h1 class="fw-700">Thank you!</h1>
+        <p class="text-light-grey">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
