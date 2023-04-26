@@ -9,7 +9,8 @@
   --clr-medium-grey: 216 12% 54%;
   --clr-dark-blue: 215 21% 16%;
   --clr-grey-blue: 210 19% 22%;
-  --clr-very-dark-blue: 228 20% 10%;
+  --clr-very-dark-blue: 228 20% 8%;
+  --clr-very-dark-grey: 222 28% 4%;
 
   /* ---font-sizes--- */
   --fs-900: clamp(5rem, 8vw + 1rem, 9.375rem);
@@ -238,12 +239,17 @@ select {
 /* Compontents         */
 /* ------------------- */
 
+#rating h1 {
+  margin-top: 0.75rem;
+}
+
 .submit-button {
   background-color: hsl(var(--clr-orange));
   border: none;
-  padding-block: 0.9rem;
-  padding-top: 1.1rem;
+  padding-block: 0.8rem;
+  padding-top: 1rem;
   border-radius: 10rem;
+  margin-top: 0.5rem;
 }
 
 .circle {
@@ -320,16 +326,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsl(var(--clr-very-dark-blue));
+  background-color: hsl(var(--clr-very-dark-grey));
   max-width: 100%;
   padding: 2rem;
 }
 
 main {
   color: hsl(var(--clr-white));
-  background-color: hsl(var(--clr-dark-blue));
+
+  background-image: linear-gradient(
+    hsl(var(--clr-dark-blue)),
+    hsl(var(--clr-very-dark-blue))
+  );
   padding: 2.5rem;
-  max-width: 30rem;
+  padding-right: 3rem;
+  max-width: 28rem;
   min-width: 22rem;
   border-radius: 1rem;
 }
