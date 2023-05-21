@@ -48,7 +48,7 @@ Started with mobile design first. Created the utility classes (fonts, colors, si
 
 ### What I learned
 
-using js for dom manipulation, single page interative element.
+using js for dom manipulation, single page interactive element.
 
 ```css
 .submit-button:hover {
